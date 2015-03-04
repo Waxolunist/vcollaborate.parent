@@ -7,8 +7,9 @@
 
 # Directories #
 bin/*
+target/
 
 # IDE #
 .classpath
 .project
-
+.settings/
