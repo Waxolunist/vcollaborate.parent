@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.v-collaborate</groupId>
 	<artifactId>v-collaborate.parent</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 	<name>JSR-303 validation constraints</name>
 	<inceptionYear>2012</inceptionYear>
@@ -36,6 +36,8 @@
 		<maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
 
 		<joda-time.version>1.2.1</joda-time.version>
+		<guava.version>18.0</guava.version>
+		<commons-lang.version>3.3.2</commons-lang.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
 		<junit.version>4.12</junit.version>
 		<hibernate-validator.version>4.3.0.Final</hibernate-validator.version>
@@ -53,10 +55,17 @@
 					<configuration>
 						<links>
 							<link>http://docs.oracle.com/javase/6/docs/api</link>
-							<link>https://docs.jboss.org/hibernate/validator/4.3/api</link>
+							<link>http://docs.jboss.org/hibernate/validator/4.3/api</link>
+							<link>http://docs.guava-libraries.googlecode.com/git-history/release/javadoc</link>
 						</links>
 						<show>protected</show>
 						<additionalparam>-Xdoclint:none</additionalparam>
+						<header>
+						<![CDATA[
+						<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+						]]>
+						</header>
+						<stylesheetfile>src/site/stylesheet.css</stylesheetfile>
 					</configuration>
 					<executions>
 						<execution>
@@ -135,7 +144,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
+
 	<reporting>
 		<excludeDefaults>true</excludeDefaults>
 		<outputDirectory>${project.build.directory}/site</outputDirectory>
@@ -196,12 +205,24 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Utils -->
 			<dependency>
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
 				<version>${joda-time.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang.version}</version>
+			</dependency>
 
+			<!-- Javax -->
 			<dependency>
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
@@ -209,6 +230,7 @@
 				<scope>provided</scope>
 			</dependency>
 
+			<!-- Testing -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
@@ -216,6 +238,7 @@
 				<scope>test</scope>
 			</dependency>
 
+			<!-- Test dependencies -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
@@ -223,6 +246,7 @@
 				<scope>test</scope>
 			</dependency>
 
+			<!-- Logging -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
@@ -230,6 +254,7 @@
 				<scope>test</scope>
 			</dependency>
 
+			<!-- Generators, Aspects -->
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
@@ -287,7 +312,7 @@
 						<artifactId>maven-gpg-plugin</artifactId>
 						<version>${maven-gpg-plugin.version}</version>
 						<configuration>
-							 <useAgent>true</useAgent>
+							<useAgent>true</useAgent>
 						</configuration>
 						<executions>
 							<execution>
