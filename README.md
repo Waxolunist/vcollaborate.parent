@@ -2,7 +2,17 @@
 
 Parent Project for all projects under the groupid com.v-collaborate
 
+## Version 1.0.3
+
+### Changed Dependencies
+
+* joda-time:joda-time:2.9 -> 2.7
+
 ## Version 1.0.2
+
+### Changed Dependencies
+
+* joda-time:joda-time:1.2.1 -> 2.9
 
 ### New Dependencies
 

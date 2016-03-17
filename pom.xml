@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.v-collaborate</groupId>
 	<artifactId>v-collaborate.parent</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>pom</packaging>
 	<name>JSR-303 validation constraints</name>
 	<inceptionYear>2012</inceptionYear>
@@ -36,7 +36,7 @@
 		<maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
 		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
 
-		<joda-time.version>2.9.2</joda-time.version>
+		<joda-time.version>2.7</joda-time.version>
 		<guava.version>18.0</guava.version>
 		<commons-lang.version>3.3.2</commons-lang.version>
 		<trove4j.version>3.0.3</trove4j.version>
