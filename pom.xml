@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.v-collaborate</groupId>
 	<artifactId>v-collaborate.parent</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>JSR-303 validation constraints</name>
 	<inceptionYear>2012</inceptionYear>
