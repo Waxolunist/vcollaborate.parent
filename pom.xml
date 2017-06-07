@@ -19,33 +19,33 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- versions -->
 		<jdk.version>1.7</jdk.version>
-		<maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
 		<license-maven-plugin.version>2.9</license-maven-plugin.version>
-		<maven-site-plugin.version>3.4</maven-site-plugin.version>
-		<maven-project-info-reports-plugin.version>2.8</maven-project-info-reports-plugin.version>
-		<maven-surefire-report-plugin.version>2.18.1</maven-surefire-report-plugin.version>
-		<maven-checkstyle-plugin.version>2.14</maven-checkstyle-plugin.version>
-		<cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
-		<maven-pmd-plugin.version>3.4</maven-pmd-plugin.version>
-		<maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-		<maven-javadoc-plugin.version>2.10.1</maven-javadoc-plugin.version>
-		<maven-jar-plugin.version>2.5</maven-jar-plugin.version>
-		<maven-source-plugin.version>2.4</maven-source-plugin.version>
+		<maven-site-plugin.version>3.6</maven-site-plugin.version>
+		<maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
+		<maven-surefire-report-plugin.version>2.20</maven-surefire-report-plugin.version>
+		<maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
+		<cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
+		<maven-pmd-plugin.version>3.8</maven-pmd-plugin.version>
+		<maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+		<maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+		<maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
+		<maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-		<site-maven-plugin.version>0.11</site-maven-plugin.version>
+		<site-maven-plugin.version>0.12</site-maven-plugin.version>
 		<maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
-		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
+		<maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
 
-		<joda-time.version>2.7</joda-time.version>
-		<guava.version>18.0</guava.version>
-		<commons-lang.version>3.3.2</commons-lang.version>
+		<joda-time.version>2.9.9</joda-time.version>
+		<guava.version>22.0</guava.version>
+		<commons-lang.version>3.5</commons-lang.version>
 		<trove4j.version>3.0.3</trove4j.version>
-		<validation-api.version>1.0.0.GA</validation-api.version>
+		<validation-api.version>1.1.0.Final</validation-api.version>
 		<junit.version>4.12</junit.version>
-		<hibernate-validator.version>4.3.0.Final</hibernate-validator.version>
-		<slf4j.version>1.7.10</slf4j.version>
-		<lombok.version>1.16.2</lombok.version>
-		<project.copyrightYear>2012-2015</project.copyrightYear>
+		<hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<lombok.version>1.16.16</lombok.version>
+		<project.copyrightYear>2012-2017</project.copyrightYear>
 
 		<!-- V-Collaborate packaages -->
 		<bittwiddling.version>1.0.0</bittwiddling.version>
