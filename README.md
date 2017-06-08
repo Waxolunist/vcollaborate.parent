@@ -2,6 +2,15 @@
 
 Parent Project for all projects under the groupid com.v-collaborate
 
+## Version 1.0.4
+
+### Changed Dependencies
+
+* joda-time:joda-time:2.9 -> 2.9.9
+* com.google.guava:guava:18.0 -> 22.0
+* org.apache.commons:commons-lang3:3.3.2 -> 3.5
+* javax.validation:validation-api:1.0.0.GA -> 1.1.0.Final
+
 ## Version 1.0.3
 
 ### Changed Dependencies
